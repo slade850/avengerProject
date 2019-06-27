@@ -1,11 +1,11 @@
-@font-face {
+@font-face { /*import d'une police*/
     font-family: 'capture_itregular';
     src: url('./webfonts/Capture_it-webfont.eot');
     src: url('./webfonts/Capture_it-webfont.eot?#iefix') format('embedded-opentype'),
          url('./webfonts/Capture_it-webfont.woff') format('woff'),
          url('./webfonts/Capture_it-webfont.ttf') format('truetype');
 }
-body {
+body { /* commun a toutes les pages */
     position: relative;
     margin: 0;
     padding: 0;
@@ -13,17 +13,32 @@ body {
     width: 100vw;
     background-color: #000000;
 }
-#mainpage {
+#mainpage { /* Positionnement des éléments de la page principal */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-#mainimg {
+#mainimg { /* Positionnement et dimensionnement de l'image d'entête */
     margin: 0;
     padding: 0;
     width: 100vw;
 }
-#Iron {
+#bdan { /* centrage de la bande annonce */
+    width: 100vw;
+    background-color: black;
+    text-align: center;
+}
+.card { /* dimensionnement des images de personnage et des noms */
+    font-family: 'capture_itregular';
+    text-align: center;
+    background-color: rgb(53, 48, 48);
+    color: white;
+    margin: 3%;
+}
+.card:hover { /* effet au passage de la sourie */
+    opacity: 0.5;
+}
+#Iron { /* mise en page de la presentation iron man */
     width: 100%;
     font-family: 'capture_itregular';
     background-image: url(./backgr/ironman.jpg);
@@ -35,23 +50,7 @@ body {
     margin-left: 1%;
     text-align: left;
 }
-#bdan {
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-    background-color: black;
-}
-.card {
-    font-family: 'capture_itregular';
-    text-align: center;
-    background-color: rgb(53, 48, 48);
-    color: white;
-    margin: 3%;
-}
-.card:hover {
-    opacity: 0.5;
-}
-#captA {
+#captA { /* mise en page de la presentation Captaine America */
     width: 100%;
     font-family: 'capture_itregular';
     background-image: url(./backgr/captainamerica.jpg);
@@ -63,7 +62,7 @@ body {
     margin-left: 1%;
     text-align: left;
 }
-#captM {
+#captM { /* mise en page de la presentation Captaine Marvel */
     width: 100%;
     font-family: 'capture_itregular';
     background-image: url(./backgr/captainmarvel.png);
@@ -76,7 +75,7 @@ body {
     text-align: left;
     background-color: rgb(0, 0, 0, 0.3);
 }
-#hulk {
+#hulk { /* mise en page de la presentation Hulk */
     width: 100%;
     font-family: 'capture_itregular';
     background-image: url(./backgr/hulkbg.jpg);
@@ -88,7 +87,7 @@ body {
     margin-left: 1%;
     text-align: left;
 }
-#thor {
+#thor { /* mise en page de la presentation Thor */
     width: 100%;
     font-family: 'capture_itregular';
     background-image: url(./backgr/thorgr.jpg);
@@ -100,7 +99,7 @@ body {
     margin-left: 1%;
     text-align: left;
 }
-#blackw {
+#blackw { /* mise en page de la presentation Black Widow */
     width: 100%;
     font-family: 'capture_itregular';
     background-image: url(./backgr/blackwidow.jpg);
@@ -112,11 +111,11 @@ body {
     margin-left: 1%;
     text-align: left;
 }
-a {
+a { /* suppression de la ligne sous les lien et coloration du texte du lien en blanc */
     text-decoration: none;
     color: white;
 }
-.describ {
+.describ { /* Positionnement de la description dans chaque page */
     position: absolute;
     position: fixed;
     bottom: 0;
